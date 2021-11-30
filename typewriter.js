@@ -1,10 +1,10 @@
 const sentence = "hello there from lighthouse labs";
-let n = 0;
-for (const char of sentence) {
-  if (char) {
-    n += 50;
-    setTimeout(() => {
-      process.stdout.write(char);
-    }, n);
-  } process.stdout.write("\n");
-}
+let newNum = 0;
+for (let i = 0; i < sentence.length; i++) {
+  newNum += 50;
+  setTimeout(() => {
+    process.stdout.write(sentence[i]);
+  }, newNum);
+}   setTimeout(() => {
+  process.stdout.write("\n");
+}, sentence.length * 50);
